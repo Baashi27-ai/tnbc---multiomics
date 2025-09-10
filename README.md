@@ -30,4 +30,35 @@ tnbc-multiomics/
 │── LICENSE            # MIT License
 │── README.md          # Project overview (this file)
 
+## Key Figures
+
+<p align="center">
+  <img src="figures/SNF_UMAP.png" alt="SNF UMAP" width="45%"/>
+  <img src="figures/KM_SNF_clusters.png" alt="Kaplan–Meier by SNF clusters" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/volcano_DESeq2_TNBC_vs_NonTNBC.png" alt="RNA-seq Volcano" width="45%"/>
+  <img src="figures/volcano_Methylation_TNBC_vs_NonTNBC.png" alt="Methylation Volcano" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/venn_deg_dmp.png" alt="DEG–DMP overlap" width="45%"/>
+  <img src="figures/TMB_hist_TNBC.png" alt="Tumor Mutational Burden" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/cox_forest_by_cluster.png" alt="Cox Forest by cluster" width="45%"/>
+  <img src="figures/GO_BP_HyperDown_top15.png" alt="GO BP HyperDown" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/GO_BP_HypoUp_top15.png" alt="GO BP HypoUp" width="45%"/>
+  <img src="figures/shap_summary.png" alt="SHAP summary" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/oncoplot_TNBC_top20.png" alt="Oncoplot top 20" width="60%"/>
+</p>
+
 
