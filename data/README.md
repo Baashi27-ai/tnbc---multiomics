@@ -10,4 +10,4 @@ To reproduce results, place your input files in data/ with these names:
 - proteomics.tsv – protein abundance
 
 👉 Example placeholders are provided in data/sample/.  
-👉 Update paths in src/00_setup.R if your data files differ.
+👉 Update paths in src/00_setup.R if  data files differ.
