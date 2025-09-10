@@ -1,0 +1,18 @@
+﻿.venv/
+_pycache_/
+*.pyc
+.ipynb_checkpoints/
+# R / data artifacts
+*.RData
+*.RDS
+.Rhistory
+checkpoints/
+results_m2/
+scripts_m2/
+scripts_m3/
+TNBC__.zip
+*.zip
+.env
+
+pycache_/
+
