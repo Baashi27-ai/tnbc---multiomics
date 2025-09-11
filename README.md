@@ -6,51 +6,128 @@
 
 ---
 
-### 📖 Project Overview
+## 📖 Project Overview
 End-to-end analysis of Triple-Negative Breast Cancer (TNBC) using:
 - *RNA-seq* (expression profiling)  
 - *DNA methylation* (DMPs)  
-- *Genomic mutations* (TMB, mutational profiling)  
+- *Genomic mutations* (TMB mutational profiling)  
 - *Proteomics* (GSVA/PROGENy panels)  
 
-Multi-omics integration was performed using *Similarity Network Fusion (SNF)* and *consensus clustering*, validated by survival analysis (KM/Cox) and enriched pathways.  
+Multi-omics integration was performed using *Similarity Network Fusion (SNF)* and consensus clustering, validated by survival analysis (KM/Cox) and pathway enrichment (GO/GSVA/PROGENy).  
 Model *explainability* was provided with *SHAP*.  
 
 ---
 
-### ✨ Key Highlights
+## ✨ Key Highlights
 - *Integration:* SNF + consensus → stable TNBC subtypes  
-- *Biology:* GO/Reactome enrichment, GSVA panels, PROGENy TF activity  
-- *Outcomes:* Kaplan–Meier & Cox regression confirm prognostic separation  
-- *Explainability:* SHAP summaries + feature prep scripts  
+- *Biology:* GO/Reactome enrichment; GSVA panels; PROGENy TF activity  
+- *Outcomes:* Kaplan–Meier & age-adjusted Cox confirm prognostic separation  
+- *Explainability:* SHAP summaries + feature contribution  
 
 ---
 
-### 📂 Repository Layout
+## 📂 Repository Layout
 
 | Folder / File       | Description |
 |---------------------|-------------|
-| data/             | Input data (placeholders only, see data/README.md) |
-| figures/          | All key plots (volcano, KM, Cox, SNF, SHAP, etc.) with guide |
+| data/             | Input data (placeholders only; see data/README.md) |
+| figures/          | Key plots (volcano, KM, Cox, SNF, SHAP, etc.) |
 | reports/          | Human-readable reports & slide decks |
 | results/          | Processed outputs (plots, tables, checkpoints) |
 | src/              | Source code scripts for full pipeline |
 | env/              | Environment + session info |
-| run_all.R         | Master script to run entire workflow |
+| run_all.R         | Master script to run the entire workflow |
 | LICENSE           | MIT License |
 | README.md         | Project overview & documentation |
 
 ---
 
-### 📊 Example Figures
+## 📊 Example Figures
 <p align="center">
-  <img src="figures/Volcano_DESeq2_TNBC_vs_NonTNBC.png" alt="RNA-seq Volcano" width="45%"/>
-  <img src="figures/SNF_UMAP.png" alt="SNF UMAP" width="45%"/>
+  <img src="figures/volcano_DESeq2_TNBC_vs_NonTNBC.png" alt="RNA-seq Volcano" width="45%"/>
+  <img src="figures/volcano_Methylation_TNBC_vs_NonTNBC.png" alt="Methylation Volcano" width="45%"/>
 </p>
+
 <p align="center">
-  <img src="figures/KM_SNF_clusters.png" alt="Kaplan-Meier by SNF clusters" width="45%"/>
-  <img src="figures/shap_summary.png" alt="SHAP summary" width="45%"/>
+  <img src="figures/venn_deg_dmp.png" alt="DEG/DMP overlap Venn" width="45%"/>
+  <img src="figures/SNF_UMAP.png" alt="SNF UMAP clusters" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/KM_SNF_clusters.png" alt="Kaplan–Meier survival by SNF clusters" width="45%"/>
+  <img src="figures/cox_forest_by_cluster.png" alt="Cox regression forest" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/TMB_hist_TNBC.png" alt="Tumor Mutational Burden" width="45%"/>
+  <img src="figures/oncoplot_TNBC_top20.png" alt="Oncoplot Top 20 mutated genes" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/GO_BP_HypoUp_top15.png" alt="GO BP HypoUp pathways" width="45%"/>
+  <img src="figures/GO_BP_HypoDown_top15.png" alt="GO BP HypoDown pathways" width="45%"/>
+</p>
+
+<p align="center">
+  <img src="figures/shap_summary.png" alt="SHAP feature explainability summary" width="80%"/>
 </p>
 
 ---
 
+## 🚀 Getting Started
+
+Clone the repository and run the master script:
+
+```bash
+git clone https://github.com/Baashi27-ai/tnbc---multiomics.git
+cd tnbc---multiomics
+Rscript run_all.R
+
+📦 Requirements
+
+This pipeline was developed and tested in R 4.3+.
+Install the following R packages before running:
+install.packages(c(
+  "tidyverse", "data.table", "SNFtool", "ConsensusClusterPlus",
+  "survival", "survminer", "maftools", "GSVA", "progeny",
+  "clusterProfiler", "ComplexHeatmap", "ggpubr", "factoextra",
+  "ggplot2", "shapper", "iml"
+))
+
+📂 Directory Overview
+
+data/ → input data (RNA-seq, methylation, mutations, proteomics)
+
+figures/ → key result plots (volcano, SNF, KM, Cox, SHAP, oncoplot)
+
+reports/ → DOCX/PPTX reports and slides
+
+results/ → intermediate and processed outputs
+
+src/ → pipeline scripts (QC, integration, survival, enrichment, SHAP)
+
+env/ → environment and session info
+
+run_all.R → orchestrates the full workflow
+
+
+
+---
+
+📖 Citation
+
+If you use this repository, please cite:
+
+> Bhaskararao Ch (2025). TNBC Multi-Omics Integration Pipeline. GitHub.
+Available at: https://github.com/Baashi27-ai/tnbc---multiomics
+
+
+
+
+---
+
+👤 Author & License
+
+Author: Bhaskararao Ch (GitHub: Baashi27-ai)
+📧 Email: bhaskarch.1602@gmail.com
+License: MIT
