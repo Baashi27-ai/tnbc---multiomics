@@ -101,14 +101,24 @@ install.packages(c("tidyverse","data.table","ComplexHeatmap","survival","survmin
 
 ---
 
-## 🧾 Citation
+## 📖 Citation
 
 If you use this repository, please cite:
 
-> *Bhaskara Rao Ch (2025).* TNBC Multi-Omics Integration Pipeline. GitHub Repository.  
-> Available at: [https://github.com/Baashi27-ai/tnbc---multiomics](https://github.com/Baashi27-ai/tnbc---multiomics)
+Bhaskarao Ch (2025). TNBC Multi-Omics: End-to-end Integration Pipeline. Learning Lab Research Institute.  
+DOI: [10.5281/zenodo.17905856](https://doi.org/10.5281/zenodo.17905856)
 
----
+### BibTeX
+```bibtex
+@software{bhaskarao2025tnbc,
+  author       = {Bhaskarao Ch},
+  title        = {TNBC Multi-Omics: End-to-end Integration Pipeline},
+  institution  = {Learning Lab Research Institute},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.17905856},
+  url          = {https://doi.org/10.5281/zenodo.17905856}
+}
 
 ## 👤 Author & License
 
