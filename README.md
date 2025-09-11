@@ -109,16 +109,12 @@ Bhaskarao, C. (2025). TNBC Multi-Omics: End-to-end Integration Pipeline. Learnin
 
 ---
 
-### 📌 Quick Copy
-[![Cite this repo](https://img.shields.io/badge/Cite%20this%20repo-BibTeX-blue.svg)](https://zenodo.org/record/17905856/export/hx)
-
----
-
-### BibTeX
+### 📚 BibTeX  
+[![Cite BibTeX](https://img.shields.io/badge/Cite-BibTeX-blue)](https://doi.org/10.5281/zenodo.17905856)
 
 ```bibtex
 @software{bhaskarao2025tnbc,
-  author       = {Bhaskarao, Ch},
+  author       = {Bhaskarao Ch},
   title        = {TNBC Multi-Omics: End-to-end Integration Pipeline},
   institution  = {Learning Lab Research Institute},
   year         = {2025},
@@ -126,7 +122,9 @@ Bhaskarao, C. (2025). TNBC Multi-Omics: End-to-end Integration Pipeline. Learnin
   doi          = {10.5281/zenodo.17905856},
   url          = {https://doi.org/10.5281/zenodo.17905856}
 }
-APA
+📚 APA
+
+
 
 Bhaskarao, C. (2025). TNBC Multi-Omics: End-to-end Integration Pipeline. Learning Lab Research Institute. Zenodo. https://doi.org/10.5281/zenodo.17905856
 
