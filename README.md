@@ -28,43 +28,15 @@ Model *explainability* was provided with *SHAP*.
 
 ```mermaid
 graph LR
-  A[*Input data<br/>RNA-seq counts<br/>DNA methylation (β/M)<br/>Mutations (MAF/TMB)<br/>Proteomics] --> B[QC & normalization*<br/>filtering, transforms]
-  B --> C1[*DEG* (RNA-seq)]
-  B --> C2[*DMP* (methylation)]
-  B --> C3[*Mutation/TMB*]
-  B --> C4[*Proteomics panels*]
-
-  C1 --> D1[*Pathway activity* (GSVA)]
-  C2 --> D1
-  C4 --> D1
-  C1 --> D2[*TF activity* (PROGENy)]
-
-  B --> E[*Similarity Network Fusion* (SNF)]
-  E --> F[*Consensus clustering* (k=2..8)]
-  F --> G[*Subtype labels*]
-
-  G --> H1[*Survival* (KM, Cox)]
-  G --> H2[*Biology summaries* (GO/Reactome)]
-  G --> H3[*Explainability* (SHAP)]
-
-  H1 --> I1[KM curves • Cox forests]
-  H2 --> I2[GO/Reactome panels]
-  D1 --> I3[GSVA panels]
-  D2 --> I4[TF activity panels]
-  C1 --> I5[Volcano • Venn • Oncoplot]
-  H3 --> I6[SHAP summary]
-
-  I1 --> J[*Reports & Slides*]
-  I2 --> J
-  I3 --> J
-  I4 --> J
-  I5 --> J
-  I6 --> J
-  J --> K[*GitHub release v1.0*]
-
-
----
-
+  A1[Input data: RNA-seq counts] --> B[QC & normalization]
+  A2[Input data: DNA methylation (DMPs)] --> B
+  A3[Input data: Mutations (MAF, TMB)] --> B
+  A4[Input data: Proteomics (GSVA/PROGENy panels)] --> B
+  B --> C1[Integration via SNF]
+  C1 --> C2[Consensus clustering]
+  C2 --> D1[Survival analysis (KM/Cox)]
+  C2 --> D2[Pathway enrichment (GO/Reactome)]
+  C2 --> D3[Explainability with SHAP]
 🖼 Figure captions (one-liners)
 
 Volcano (RNA-seq / Methylation): Differential signals between TNBC vs non-TNBC.
