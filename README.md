@@ -24,7 +24,76 @@ Model *explainability* was provided with *SHAP*.
 - *Outcomes:* Kaplan–Meier & age-adjusted Cox confirm prognostic separation  
 - *Explainability:* SHAP summaries + feature contribution  
 
+## 🔧 Workflow (end-to-end)
+
+```mermaid
+graph LR
+  A[*Input data<br/>RNA-seq counts<br/>DNA methylation (β/M)<br/>Mutations (MAF/TMB)<br/>Proteomics] --> B[QC & normalization*<br/>filtering, transforms]
+  B --> C1[*DEG* (RNA-seq)]
+  B --> C2[*DMP* (methylation)]
+  B --> C3[*Mutation/TMB*]
+  B --> C4[*Proteomics panels*]
+
+  C1 --> D1[*Pathway activity* (GSVA)]
+  C2 --> D1
+  C4 --> D1
+  C1 --> D2[*TF activity* (PROGENy)]
+
+  B --> E[*Similarity Network Fusion* (SNF)]
+  E --> F[*Consensus clustering* (k=2..8)]
+  F --> G[*Subtype labels*]
+
+  G --> H1[*Survival* (KM, Cox)]
+  G --> H2[*Biology summaries* (GO/Reactome)]
+  G --> H3[*Explainability* (SHAP)]
+
+  H1 --> I1[KM curves • Cox forests]
+  H2 --> I2[GO/Reactome panels]
+  D1 --> I3[GSVA panels]
+  D2 --> I4[TF activity panels]
+  C1 --> I5[Volcano • Venn • Oncoplot]
+  H3 --> I6[SHAP summary]
+
+  I1 --> J[*Reports & Slides*]
+  I2 --> J
+  I3 --> J
+  I4 --> J
+  I5 --> J
+  I6 --> J
+  J --> K[*GitHub release v1.0*]
+
+
 ---
+
+🖼 Figure captions (one-liners)
+
+Volcano (RNA-seq / Methylation): Differential signals between TNBC vs non-TNBC.
+
+Venn (DEG∩DMP): Overlap of expression and methylation hits.
+
+SNF UMAP: Sample embedding from fused similarity network.
+
+KM (by SNF cluster): Overall survival stratified by subtypes.
+
+Cox forests: Hazard ratios (overall & age-adjusted).
+
+TMB histogram: Tumor mutational burden distribution.
+
+Oncoplot (top20): Recurrent mutations across samples.
+
+GO BP (HyperDown / HypoUp): Enriched biological processes.
+
+SHAP summary: Feature contributions supporting subtype separation.
+
+
+
+---
+
+📌 Milestones
+
+v1.0 (current): Full pipeline, figures, reports, env/session info, README guides.
+
+Planned: Notebook examples, automated CI checks, optional Docker image.
 
 ## 📂 Repository Layout
 
