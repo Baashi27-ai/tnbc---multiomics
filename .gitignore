@@ -1,21 +1,22 @@
-﻿.venv/
-_pycache_/
-*.pyc
-.ipynb_checkpoints/
-# R / data artifacts
-*.RData
-*.RDS
+# R and RStudio
 .Rhistory
-checkpoints/
-results_m2/
-scripts_m2/
-scripts_m3/
-TNBC__.zip
-*.zip
-.env
+.RData
+.Rproj.user/
+.Rproj
 
-pycache_/
+# Temporary / cache
+.Rcheck/
+.Rbuildignore
+.DS_Store
 
+# Raw data
+data/*.tsv
+data/*.csv
+data/*.maf
+data/*.xlsx
 
-pycache_/
-
+# Logs / outputs
+*.log
+*.tmp
+*.bak
+results/checkpoints/*
