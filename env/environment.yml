@@ -1,8 +1,23 @@
-﻿name: tnbc-m1
+name: tnbc-multiomics
 channels:
   - conda-forge
+  - bioconda
+  - defaults
 dependencies:
-  - python=3.10
-  - r-base
-  - r-essentials
-  - pandoc
+  - r-base=4.3
+  - r-tidyverse
+  - r-data.table
+  - r-complexheatmap
+  - r-survival
+  - r-survminer
+  - r-consensusclusterplus
+  - bioconductor-snftool
+  - bioconductor-gsva
+  - bioconductor-progeny
+  - bioconductor-maftools
+  - r-ggplot2
+  - r-shapper
+  - r-iml
+  - r-caret
+  - r-knitr
+  - r-rmarkdown
