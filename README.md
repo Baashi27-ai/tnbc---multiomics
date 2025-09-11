@@ -4,17 +4,35 @@
 [![Release](https://img.shields.io/github/v/release/Baashi27-ai/tnbc---multiomics)](https://github.com/Baashi27-ai/tnbc---multiomics/releases)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17905856.svg)](https://doi.org/10.5281/zenodo.17905856)
 
-End-to-end analysis of Triple-Negative Breast Cancer (TNBC) using:
+---
 
-- *RNA-seq* (expression profiling)  
-- *DNA methylation* (DMPs)  
-- *Genomic mutations* (TMB mutational profiling)  
-- *Proteomics* (GSVA/PROGENy panels)  
-
-Multi-omics integration via *Similarity Network Fusion (SNF)* and consensus clustering, validated by survival analysis (KM/Cox).  
-Model *explainability* was provided with SHAP.
+### 🔗 Quick Navigation  
+- [Project Overview](#project-overview)  
+- [Key Highlights](#key-highlights)  
+- [Repository Layout](#repository-layout)  
+- [Example Figures](#example-figures)  
+- [Getting Started](#getting-started)  
+- [Workflow](#workflow-end-to-end)  
+- [Milestones](#milestones)  
+- [Citation](#citation)  
+- [Author & License](#author--license)  
 
 ---
+
+## 📘 Project Overview
+End-to-end analysis of Triple-Negative Breast Cancer (TNBC) using:  
+
+- RNA-seq (expression profiling)  
+- DNA methylation (DMPs)  
+- Genomic mutations (TMB mutational profiling)  
+- Proteomics (GSVA/PROGENY panels)  
+
+Multi-omics integration was performed using Similarity Network Fusion (SNF) and consensus clustering, validated by survival analysis (KM/Cox), and pathway enrichment (GO/GSVA/PROGENY).  
+Model explainability was provided with SHAP.  
+
+---
+
+## ✨ Key Highlights
 
 ## ✨ Key Highlights
 - Integration: SNF + consensus → stable TNBC subtypes  
