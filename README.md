@@ -212,6 +212,31 @@ Deliverables:
 
 ---
 
+## 🖼 Figures Manifest
+
+Below is a curated list of key figures generated in this project. Each file is available under results/plots/, deliverables/, or results/.../figures.
+
+| Figure | Filename | Caption |
+|--------|----------|---------|
+| *Volcano (RNA-seq)* | volcano_DESeq2_TNBC_vs_NonTNBC.png | Differentially expressed genes between TNBC and non-TNBC. |
+| *Volcano (Methylation)* | volcano_Methylation_TNBC_vs_NonTNBC.png | Differentially methylated probes (DMPs) between TNBC and non-TNBC. |
+| *Venn Diagram* | venn_deg_dmp.png | Overlap between DEGs and DMP-associated genes. |
+| *SNF UMAP* | SNF_UMAP.png | Low-dimensional embedding of fused multi-omics (RNA + methylation). |
+| *Kaplan–Meier Curves* | KM_SNF_clusters.png | Survival probability across SNF clusters (K=6). |
+| *Cox Forest Plot* | Forest_Cox_HR_SNF_clusters.png | Hazard ratios for SNF clusters (unadjusted). |
+| *Cox Forest Plot (age-adjusted)* | Forest_Cox_HR_SNF_clusters_ageAdjusted.png | Hazard ratios adjusted for age. |
+| *Pathway Enrichment (GO BP)* | GO_BP_DOWN_cluster1.png, etc. | Cluster-wise GO Biological Process enrichments. |
+| *Pathway Enrichment (KEGG/Reactome)* | KEGG_cluster2_UP.png, Reactome_cluster3_DOWN.png | Functional pathway enrichment per cluster. |
+| *TMB Histogram* | TMB_hist_TNBC.png | Tumor Mutational Burden distribution in TNBC patients. |
+| *Oncoplot* | oncoplot_TNBC_top20.png | Top 20 recurrently mutated genes in TNBC cohort. |
+| *SHAP Summary* | shap_summary.png | Global feature importance from explainable ML (RNA-based XGBoost). |
+
+---
+
+### Notes
+- High-resolution *PDF versions* are available alongside PNGs in results/plots/.  
+- Cluster-specific enrichment plots are under results/enrichment/ and results/markers_strict_enrichment/.  
+- Cohort audit TSVs are under results/audit/ for reproducibility.
 
 ## 🖼 Example Figures
 
