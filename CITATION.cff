@@ -1,0 +1,28 @@
+# CITATION.cff
+cff-version: 1.2.0
+title: "TNBC Multi-Omics: End-to-end integration pipeline"
+message: "If you use this repository, please cite it as below."
+type: software
+
+authors:
+  - family-names: "Ch"
+    given-names: "Bhaskararao"
+    affiliation: "Learning Lab Research Institute"
+    email: "bhaskarch.1602@gmail.com"
+    
+
+repository-code: "https://github.com/Baashi27-ai/tnbc---multiomics"
+license: "MIT"
+version: "1.0.0"
+date-released: "2025-09-11"
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Ch"
+      given-names: "Bhaskararao"
+  year: 2025
+  title: "TNBC Multi-Omics integration pipeline"
+  journal: "GitHub repository"
+  publisher: "GitHub"
+  url: "https://github.com/Baashi27-ai/tnbc---multiomics"
