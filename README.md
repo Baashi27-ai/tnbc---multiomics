@@ -101,7 +101,7 @@ install.packages(c("tidyverse","data.table","ComplexHeatmap","survival","survmin
 
 If you use this repository, please cite:
 
-> *Bhaskarao Ch (2025).* TNBC Multi-Omics Integration Pipeline. GitHub Repository.  
+> *Bhaskara Rao Ch (2025).* TNBC Multi-Omics Integration Pipeline. GitHub Repository.  
 > Available at: [https://github.com/Baashi27-ai/tnbc---multiomics](https://github.com/Baashi27-ai/tnbc---multiomics)
 
 ---
@@ -109,7 +109,7 @@ If you use this repository, please cite:
 ## 👤 Author & License
 
 - *Author:* Bhaskarao Ch (GitHub: [Baashi27-ai](https://github.com/Baashi27-ai))  
-- *Email:* bhaskarch.lio6@gmail.com  
+- *Email:* bhaskarch.1602@gmail.com  
 - *License:* MIT  
 
 ---
